@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <h1>Welcome to Student management system </h1>
+        
+    </body>
+<style>
+    table, th, td{
+        border: 1px solid black;
+
+    }
+</style>
+    <a href="{{ url_for('home_page') }}"><button> home </button><br></a>
+    <a href="{{ url_for('add_stud') }}"><button> edit  </button><br></a>
+
+    <table>
+        <tr>
+            <th> id </th>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+        {% for i in student_details %}
+        <tr>
+            <td>{{i[0]}}</td>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+</html>

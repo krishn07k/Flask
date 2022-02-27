@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <h1>Welcome to Student management system </h1>
+        
+    </body>
+<style>
+   
+</style>
+    <a href="{{ url_for('home_page') }}"><button> home </button><br></a>
+    <a href="{{ url_for('add_stud') }}"><button> edit </button><br></a>
+
+
+    <br>
+
+    <br>
+
+    <form action="http://localhost:5000/add" method="post">
+        <label> name</label><br>
+        <input name="name" id="name" type="text"><br>
+            
+        <label> age</label><br>
+        <input name="age" id="age" type="number">
+        <button>submit</button>
+        
+
+
+
+    </form>
+
+  
+</html>
